@@ -9,10 +9,10 @@ import { CONFIG } from "../config/settings.js";
 /**
  Process a single frontier entry:
  1. Check robots.txt
-2. Throttle per domain
- *  3. Fetch + parse
- *  4. Save to MongoDB
- *  5. Add new links to frontier
+ 2. Throttle per domain
+ 3. Fetch + parse
+ 4. Save to MongoDB
+ 5. Add new links to frontier
  */
 export async function processURL(entry) {
   const { url, depth } = entry;
